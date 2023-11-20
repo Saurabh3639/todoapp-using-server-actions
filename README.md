@@ -13,10 +13,12 @@ npm install sequelize mysql2 pg-hstore moment-timezone
 ```
 
 ## .env File
+```bash
 DB_NAME = 
 DB_USER = 
 DB_PASSWORD = 
 DB_HOST = 
+```
 
 ## Screenshots
 > Desktop View  
