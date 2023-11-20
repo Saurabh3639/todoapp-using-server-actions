@@ -12,6 +12,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 npm install sequelize mysql2 pg-hstore moment-timezone
 ```
 
+## .env File
+DB_NAME = 
+DB_USER = 
+DB_PASSWORD = 
+DB_HOST = 
+
 ## Screenshots
 > Desktop View  
 ![Desktop View Screenshot](https://i.postimg.cc/kGn3fpQK/todoapp-desktop.png)
