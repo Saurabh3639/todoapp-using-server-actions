@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: "export",
-  experimental: {
-    serverActions: true,
-  },
   env: {
     DB_NAME: process.env.DB_NAME,
     DB_USER: process.env.DB_USER,
