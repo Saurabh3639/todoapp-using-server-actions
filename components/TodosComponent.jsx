@@ -3,7 +3,7 @@
 import {
   addTodo,
   updateTodo,
-  deleteTodo,
+  deleteTodo
 } from "@/actions/todoActions";
 import React, { useRef, useState } from "react";
 
