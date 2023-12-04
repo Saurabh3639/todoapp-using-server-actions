@@ -1,10 +1,12 @@
 import TodosComponent from "@/components/TodosComponent";
 import Todo from "@/models/todoModel";
+import { revalidatePath } from "next/cache";
 
 export default async function Home() {
   const todos = await Todo.findAll();
   const plainTodos = todos.map(todo => todo.get({ plain: true })); // Convert to plain object
   // console.log(plainTodos);
+  revalidatePath("/todos");
 
   return (
     <div className="min-h-screen">
