@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: "export",
-  distDir: "out",
+  // distDir: "out",
   env: {
     DB_NAME: process.env.DB_NAME,
     DB_USER: process.env.DB_USER,
