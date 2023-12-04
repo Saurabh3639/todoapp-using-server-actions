@@ -1,6 +1,10 @@
 "use client";
 
-import { addTodo, updateTodo, deleteTodo } from "@/actions/todoActions";
+import {
+  addTodo,
+  updateTodo,
+  deleteTodo,
+} from "@/actions/todoActions";
 import React, { useRef, useState } from "react";
 
 export default function TodosComponent({ todos }) {
@@ -47,7 +51,7 @@ export default function TodosComponent({ todos }) {
             onSubmit={handleSubmit}
           >
             <div className="relative mb-4">
-              <label for="title" className="leading-7 text-sm text-gray-600">
+              <label htmlFor="title" className="leading-7 text-sm text-gray-600">
                 Todo title
               </label>
               <input
@@ -60,7 +64,7 @@ export default function TodosComponent({ todos }) {
             </div>
             <div className="relative mb-4">
               <label
-                for="description"
+                htmlFor="description"
                 className="leading-7 text-sm text-gray-600"
               >
                 Todo Description

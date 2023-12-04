@@ -3,6 +3,8 @@ import Todo from "@/models/todoModel";
 
 export default async function Home() {
   const todos = await Todo.findAll();
+  const plainTodos = todos.map(todo => todo.get({ plain: true })); // Convert to plain object
+  // console.log(plainTodos);
 
   return (
     <div className="min-h-screen">
@@ -13,7 +15,7 @@ export default async function Home() {
       </div>
 
       <>
-        <TodosComponent todos={todos} />
+        <TodosComponent todos={plainTodos} />
       </>
     </div>
   );
